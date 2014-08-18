@@ -15,7 +15,7 @@ function name($file) {
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="robots" content="index, follow, all">
 
-	<title>Trolling Images | Comics</title>
+	<title>Meme Images | Kcko</title>
 
 	<link href="bootstrap.min.css" type="text/css" rel="stylesheet" />
 	<style>
@@ -29,18 +29,6 @@ function name($file) {
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="bootstrap.min.js"></script>
 
-	<script type="text/javascript">
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-12182518-8']);
-	  _gaq.push(['_setDomainName', 'hosiplan.com']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	</script>
 </head>
 <body>
 
@@ -54,7 +42,7 @@ function name($file) {
 
 	<?php foreach (glob(__DIR__ . '/images/*') as $file): if(!is_image($file)) continue ?>
 		<div class="face">
-			<a href="https://raw.githubusercontent.com/Kcko/Trolling/master/images/<?php e(basename($file)) ?>">
+			<a href="https://raw.githubusercontent.com/Kcko/Meme/master/images/<?php e(basename($file)) ?>">
 				<img src="images/<?php e(basename($file)) ?>" alt="<?php e(basename($file)) ?>">
 			</a>
 			<?php name($file) ?>
